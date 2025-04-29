@@ -21,7 +21,10 @@
                 "day_of_week"  : 3,
                 "start_hour"   : 2,
                 "start_minute" : 0
-            }
+            },
+            "pgbouncer_enabled" : true,
+            "high_availability_enabled" : false
+
           },
           "pgflex4": {
               "enabled"    : true,
