@@ -12,8 +12,8 @@ locals {
 }
 
 
-module "postgresql_flexible_server_idh" {
-  source              = "git::https://github.com/pagopa/terraform-azurerm-v4.git//postgres_flexible_server?ref=v5.4.0"
+resource "azurerm_postgresql_flexible_server" "this" {
+
   name                = var.name
   location            = var.location
   resource_group_name = var.resource_group_name
