@@ -7,7 +7,7 @@ resource "null_resource" "pgbouncer_check" {
 }
 
 locals {
-  local_data = jsondecode(file("${path.root}/src/idh/${var.prefix}/${var.env}/idh.json"))
+  local_data = jsondecode(file("${path.module}/../idh/${var.prefix}/${var.env}/idh.json"))
 
 }
 
