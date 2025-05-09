@@ -6,10 +6,10 @@
 #   count = length(regexall("^B_.*", local.local_data[var.idh_resource].sku_name)) > 0 && local.local_data[var.idh_resource].pgbouncer_enabled ? "ERROR: PgBouncer is not allow for Burstable(B) series" : 0
 # }
 #
-# locals {
-#   local_data = jsondecode(file("${path.module}/../idh/${var.prefix}/${var.env}/idh.json"))
-#
-# }
+locals {
+  local_data = jsondecode(file("${path.module}/../idh/${var.prefix}/${var.env}/idh.json"))
+
+}
 
 
 # resource "azurerm_postgresql_flexible_server" "this" {
