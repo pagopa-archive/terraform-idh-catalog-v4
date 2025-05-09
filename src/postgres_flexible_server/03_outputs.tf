@@ -1,17 +1,17 @@
 output "id" {
-  value = azurerm_postgresql_flexible_server.this.id
+  value = module.pgflex.id
 }
 
 output "name" {
-  value = azurerm_postgresql_flexible_server.this.name
+  value = module.pgflex.name
 }
 
 output "fqdn" {
-  value = azurerm_postgresql_flexible_server.this.fqdn
+  value = module.pgflex.fqdn
 }
 
 output "public_access_enabled" {
-  value = azurerm_postgresql_flexible_server.this.public_network_access_enabled
+  value = module.pgflex.public_access_enabled
 }
 
 output "administrator_login" {
