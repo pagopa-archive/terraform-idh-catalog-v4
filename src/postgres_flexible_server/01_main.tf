@@ -148,6 +148,10 @@ module "pgflex" {
 
   pgbouncer_enabled = local.local_data[var.idh_resource].pgbouncer_enabled
 
+  log_analytics_workspace_id = var.log_analytics_workspace_id
+  diagnostic_setting_destination_storage_id = var.diagnostic_setting_destination_storage_id
+  diagnostic_settings_enabled = var.diagnostic_settings_enabled
+
   tags = var.tags
 
 }
