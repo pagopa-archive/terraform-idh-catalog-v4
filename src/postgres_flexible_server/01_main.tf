@@ -4,8 +4,8 @@ locals {
 
 
 module "pgflex" {
+  source = "../../modules/__idh_v4__/postgres_flexible_server" #fixme specify version
   # source = "git::https://github.com/pagopa/terraform-azurerm-v4//postgres_flexible_server" #fixme specify version
-  source = "git::https://github.com/pagopa/terraform-azurerm-v4//postgres_flexible_server" #fixme specify version
 
   administrator_login = var.administrator_login
   administrator_password = var.administrator_password
