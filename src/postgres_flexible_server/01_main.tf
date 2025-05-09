@@ -2,6 +2,9 @@ locals {
   local_data = jsondecode(file("${path.module}/../idh/${var.prefix}/${var.env}/idh.json"))
 }
 
+module "main" {
+  source = "../main.tf"
+}
 
 module "pgflex" {
   # source = "git::https://github.com/pagopa/terraform-azurerm-v4//postgres_flexible_server" #fixme specify version
