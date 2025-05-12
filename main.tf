@@ -1,3 +1,3 @@
-module "__idh_v4__" {
+module "__v4__" {
   source = "git::https://github.com/pagopa/terraform-azurerm-v4"
 }
